@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Jannu</strong>
+                        <p>
+                            Happiest 5 months Tua, I wonder how fast time fly , dekhtei dekhte amader 5 months hoi gello re 150 DAYSSSS . In these 5 months I felt so many emotions being happy , getting sad, getting angry , obhiman kora , aro koto kichu (ei khane r bollam na) but ja ja korechi shob ek shonnge korechi re ... Jannu I feel peace when I am around you . I hope we togther will last forever and as always we are really the perfect match 💗     
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
